@@ -1,35 +1,51 @@
-<section class="phx-hero">
-  <h1><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h1>
-  <p>A productive web framework that<br/>does not compromise speed and maintainability.</p>
-</section>
-
-<section class="row">
-  <article class="column">
-    <h2>Resources</h2>
-    <ul>
-      <li>
-        <a href="https://hexdocs.pm/phoenix/overview.html">Guides &amp; Docs</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix">Source</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix/blob/v1.4/CHANGELOG.md">v1.4 Changelog</a>
-      </li>
-    </ul>
-  </article>
-  <article class="column">
-    <h2>Help</h2>
-    <ul>
-      <li>
-        <a href="https://elixirforum.com/c/phoenix-forum">Forum</a>
-      </li>
-      <li>
-        <a href="https://webchat.freenode.net/?channels=elixir-lang">#elixir-lang on Freenode IRC</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/elixirphoenix">Twitter @elixirphoenix</a>
-      </li>
-    </ul>
-  </article>
-</section>
+<div class="columns features">
+  <div class="column is-4">
+    <div class="card is-shady">
+      <div class="card-image">
+        <figure class="image is-4by3">
+          <img src="http://placeimg.com/640/360/any" alt="Placeholder image" class="">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="content">
+          <h4>Tempor orci dapibus ultrices in.</h4>
+          <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.</p>
+          <span class="button is-link"><%= gettext "Show" %></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column is-4">
+    <div class="card is-shady">
+      <div class="card-image">
+        <figure class="image is-4by3">
+          <img src="http://placeimg.com/640/400/any" alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="content">
+          <h4>Tempor orci dapibus ultrices in.</h4>
+          <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue. Phasellus vestibulum lorem
+          sed risus.</p>
+          <span class="button is-link"><%= gettext "Show" %></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column is-4">
+    <div class="card is-shady">
+      <div class="card-image">
+        <figure class="image is-4by3">
+          <img src="http://placeimg.com/640/480/any" alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="content">
+          <h4>Click anywhere on card</h4>
+          <p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla pellentesque dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra maecenas accumsan lacus vel facilisis.</p>
+          <span class="button is-link"><%= gettext "Show" %></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
