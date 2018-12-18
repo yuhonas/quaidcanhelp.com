@@ -13,11 +13,11 @@ config :quaidcanhelp, QuaidcanhelpWeb.Endpoint,
   check_origin: false,
   watchers: [
     node: [
-      "node_modules/webpack/bin/webpack.js",
-      "--mode",
-      "development",
-      "--watch-stdin",
-      cd: Path.expand("../assets", __DIR__)
+      "assets/node_modules/parcel-bundler/bin/cli.js", 
+      "watch", 
+      "assets/js/app.js", 
+      "--out-dir", "priv/static/bundle",
+      cd: Path.expand("../", __DIR__)
     ]
   ]
 
