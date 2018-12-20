@@ -11,8 +11,7 @@ config :logger, level: :warn
 
 # Configure your database
 config :quaidcanhelp, Quaidcanhelp.Repo,
-  username: "postgres",
-  password: "postgres",
   database: "quaidcanhelp_test",
-  hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
+
+import_config "database.secret.exs"

@@ -41,6 +41,10 @@ npm-debug.log
 # variables.
 /config/*.secret.exs
 
+# example.secret files do not contain sensitive information
+# and only function as an example to be copied to a .secret file
+!/config/*example.secret.exs 
+
 # Ignore macOS generated .DS_Store files
 .DS_Store
 
