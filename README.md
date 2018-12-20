@@ -1,5 +1,7 @@
 # quaidcanhelp.com
 
+[![Build Status](https://travis-ci.com/yuhonas/quaidcanhelp.com.svg?branch=master)](https://travis-ci.com/yuhonas/quaidcanhelp.com)
+
 ![total recall](./screenshot.jpg)
 
 A Total Recall inspired flash card creator, sharer and socializer
