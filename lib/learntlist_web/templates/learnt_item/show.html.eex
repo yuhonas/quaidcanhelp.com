@@ -1,0 +1,23 @@
+<h1>Show Learnt item</h1>
+
+<ul>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @learnt_item.title %>
+  </li>
+
+  <li>
+    <strong>Body:</strong>
+    <%= @learnt_item.body %>
+  </li>
+
+  <li>
+    <strong>Url:</strong>
+    <%= @learnt_item.url %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.learnt_item_path(@conn, :edit, @learnt_item) %></span>
+<span><%= link "Back", to: Routes.learnt_item_path(@conn, :index) %></span>

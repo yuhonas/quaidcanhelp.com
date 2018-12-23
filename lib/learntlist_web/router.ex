@@ -16,6 +16,7 @@ defmodule LearntlistWeb.Router do
   scope "/", LearntlistWeb do
     pipe_through :browser
 
+    resources "/learnt_items", LearntItemController
     get "/", PageController, :index
   end
 
