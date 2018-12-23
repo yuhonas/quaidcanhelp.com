@@ -1,11 +1,16 @@
 language: elixir
 elixir:
-  - 1.7.4
+- 1.7.4
 services:
-  - postgresql
+- postgresql
 before_install:
-  - cp config/database{.example,}.secret.exs
+- cp config/database{.example,}.secret.exs
 before_script:
-  - mix do ecto.create, ecto.migrate
+- mix do ecto.create, ecto.migrate
 script:
-  - mix test
+- mix test
+deploy:
+  provider: heroku
+  app: learntlist
+  api_key:
+    secure: AKPWMhe7B846hq4fvZPO6zXHMnxXhSnqiy6RKw60iWOi5DrXM8S49Rm5VjhDHRVMwx4oBvnin73zTIdmVVm9e95oHYFXOJ07r0+NJf95jzKnf9//OCbG9ms0N0CmBnlXJH3JPpvQnfO2dHzNdXcxHx05CgndoKV2+HILW41RFdCcPieqYWynADjA+Z/TemmusYL+9FSauSPIAcx2XbURBqQdilwX8WOYDmtmle/fnbooTGuL1ADFX+Xhpr+1KLeowfSqyB2UldzX3zzhADhcYna6rOaG466IpIXedXXGdzcF/5azNlD4K2M0XzLThEMrbyYcqLjAaQkYD4kOOf/V3/msqCf2s0BKnu6oc2dr+URB6X1XdlzL0b9+O89qdtKpyEpbffW7ApEsCQv1BvEBdmrhBhlSsNkXkWPor5ZLKxSm7XwPXBrjt9IjVPrIYSGolhOzq2khqncKbKfS7LbxBk/jpPLiUjivC0nnKw+9EOKCQ1M7QcuE23jqnKCtOrqlkbsaYjvLnvPqwarlZq210vp+9YsQV8zvnA+W5Z23d1e8ZAHHAyEJRq38JfCDztEKcQVsilPhgiKzd9/lkQTYv0gGzv15yRv4YYLsbfIwQ5iM5bD7Vb44xOiw3umiiq2w4QS3EQQ+C+SOrUBdGIiCzXNaAubP2oc94bG2nTR4Cf0=
