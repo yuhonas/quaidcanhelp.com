@@ -6,7 +6,7 @@ use Mix.Config
 # The watchers configuration can be used to run external
 # watchers to your application. For example, we use it
 # with webpack to recompile .js and .css sources.
-config :quaidcanhelp, QuaidcanhelpWeb.Endpoint,
+config :learntlist, LearntlistWeb.Endpoint,
   http: [port: 4000],
   debug_errors: true,
   code_reloader: true,
@@ -46,13 +46,13 @@ config :quaidcanhelp, QuaidcanhelpWeb.Endpoint,
 # different ports.
 
 # Watch static and templates for browser reloading.
-config :quaidcanhelp, QuaidcanhelpWeb.Endpoint,
+config :learntlist, LearntlistWeb.Endpoint,
   live_reload: [
     patterns: [
       ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
       ~r{priv/gettext/.*(po)$},
-      ~r{lib/quaidcanhelp_web/views/.*(ex)$},
-      ~r{lib/quaidcanhelp_web/templates/.*(eex)$}
+      ~r{lib/learntlist_web/views/.*(ex)$},
+      ~r{lib/learntlist_web/templates/.*(eex)$}
     ]
   ]
 
@@ -68,6 +68,6 @@ config :phoenix, :plug_init_mode, :runtime
 
 # Configure your database
 
-config :quaidcanhelp, Quaidcanhelp.Repo, database: "quaidcanhelp_dev"
+config :learntlist, Learntlist.Repo, database: "learntlist_dev"
 
 import_config "database.secret.exs"

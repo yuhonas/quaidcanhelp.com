@@ -1,11 +1,11 @@
-defmodule QuaidcanhelpWeb.Gettext do
+defmodule LearntlistWeb.Gettext do
   @moduledoc """
   A module providing Internationalization with a gettext-based API.
 
   By using [Gettext](https://hexdocs.pm/gettext),
   your module gains a set of macros for translations, for example:
 
-      import QuaidcanhelpWeb.Gettext
+      import LearntlistWeb.Gettext
 
       # Simple translation
       gettext("Here is the string to translate")
@@ -20,5 +20,5 @@ defmodule QuaidcanhelpWeb.Gettext do
 
   See the [Gettext Docs](https://hexdocs.pm/gettext) for detailed usage.
   """
-  use Gettext, otp_app: :quaidcanhelp
+  use Gettext, otp_app: :learntlist
 end

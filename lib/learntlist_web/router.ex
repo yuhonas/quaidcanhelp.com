@@ -1,5 +1,5 @@
-defmodule QuaidcanhelpWeb.Router do
-  use QuaidcanhelpWeb, :router
+defmodule LearntlistWeb.Router do
+  use LearntlistWeb, :router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -13,14 +13,14 @@ defmodule QuaidcanhelpWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", QuaidcanhelpWeb do
+  scope "/", LearntlistWeb do
     pipe_through :browser
 
     get "/", PageController, :index
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", QuaidcanhelpWeb do
+  # scope "/api", LearntlistWeb do
   #   pipe_through :api
   # end
 end

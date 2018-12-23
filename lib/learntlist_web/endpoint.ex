@@ -1,7 +1,7 @@
-defmodule QuaidcanhelpWeb.Endpoint do
-  use Phoenix.Endpoint, otp_app: :quaidcanhelp
+defmodule LearntlistWeb.Endpoint do
+  use Phoenix.Endpoint, otp_app: :learntlist
 
-  socket "/socket", QuaidcanhelpWeb.UserSocket,
+  socket "/socket", LearntlistWeb.UserSocket,
     websocket: true,
     longpoll: false
 
@@ -11,7 +11,7 @@ defmodule QuaidcanhelpWeb.Endpoint do
   # when deploying your static files in production.
   plug Plug.Static,
     at: "/",
-    from: :quaidcanhelp,
+    from: :learntlist,
     gzip: false,
     only: ~w(bundle css fonts images js favicon.ico robots.txt)
 
@@ -39,8 +39,8 @@ defmodule QuaidcanhelpWeb.Endpoint do
   # Set :encryption_salt if you would also like to encrypt it.
   plug Plug.Session,
     store: :cookie,
-    key: "_quaidcanhelp_key",
+    key: "_learntlist_key",
     signing_salt: "YLZw7OUa"
 
-  plug QuaidcanhelpWeb.Router
+  plug LearntlistWeb.Router
 end

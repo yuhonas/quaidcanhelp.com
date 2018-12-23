@@ -1,5 +1,5 @@
-defmodule QuaidcanhelpWeb.ErrorView do
-  use QuaidcanhelpWeb, :view
+defmodule LearntlistWeb.ErrorView do
+  use LearntlistWeb, :view
 
   # If you want to customize a particular status code
   # for a certain format, you may uncomment below.

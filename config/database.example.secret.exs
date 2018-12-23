@@ -5,7 +5,7 @@
 
 use Mix.Config
 
-config :quaidcanhelp, Quaidcanhelp.Repo,
+config :learntlist, Learntlist.Repo,
   username: "postgres",
   password: "",
   hostname: "localhost",

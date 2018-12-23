@@ -7,15 +7,15 @@
 # General application configuration
 use Mix.Config
 
-config :quaidcanhelp,
-  ecto_repos: [Quaidcanhelp.Repo]
+config :learntlist,
+  ecto_repos: [Learntlist.Repo]
 
 # Configures the endpoint
-config :quaidcanhelp, QuaidcanhelpWeb.Endpoint,
+config :learntlist, LearntlistWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "yb3ymCCrMP2klivrXBpYfpYkJme7nfiBVH8hAuyyFgcJTfQ9sO0eO/+GSzUDYV0n",
-  render_errors: [view: QuaidcanhelpWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: Quaidcanhelp.PubSub, adapter: Phoenix.PubSub.PG2]
+  render_errors: [view: LearntlistWeb.ErrorView, accepts: ~w(html json)],
+  pubsub: [name: Learntlist.PubSub, adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger
 config :logger, :console,

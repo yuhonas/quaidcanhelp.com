@@ -1,4 +1,4 @@
-defmodule QuaidcanhelpWeb.ErrorHelpers do
+defmodule LearntlistWeb.ErrorHelpers do
   @moduledoc """
   Conveniences for translating and building error messages.
   """
@@ -36,9 +36,9 @@ defmodule QuaidcanhelpWeb.ErrorHelpers do
     # should be written to the errors.po file. The :count option is
     # set by Ecto and indicates we should also apply plural rules.
     if count = opts[:count] do
-      Gettext.dngettext(QuaidcanhelpWeb.Gettext, "errors", msg, msg, count, opts)
+      Gettext.dngettext(LearntlistWeb.Gettext, "errors", msg, msg, count, opts)
     else
-      Gettext.dgettext(QuaidcanhelpWeb.Gettext, "errors", msg, opts)
+      Gettext.dgettext(LearntlistWeb.Gettext, "errors", msg, opts)
     end
   end
 end

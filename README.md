@@ -1,10 +1,8 @@
-# quaidcanhelp.com
+# learntlist.com
 
-[![Build Status](https://travis-ci.com/yuhonas/quaidcanhelp.com.svg?branch=master)](https://travis-ci.com/yuhonas/quaidcanhelp.com)
+[![Build Status](https://travis-ci.com/yuhonas/learntlist.com.svg?branch=master)](https://travis-ci.com/yuhonas/learntlist.com)
 
-![total recall](./screenshot.jpg)
-
-A Total Recall inspired flash card creator, sharer and socializer
+A dispassionate list of day to day learnings
 
 ## Getting Started
 
@@ -21,19 +19,19 @@ Give examples
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `quaidcanhelp` to your list of dependencies in `mix.exs`:
+by adding `learntlist` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
   [
-    {:quaidcanhelp, "~> 0.1.0"}
+    {:learntlist, "~> 0.1.0"}
   ]
 end
 ```
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/quaidcanhelp](https://hexdocs.pm/quaidcanhelp).
+be found at [https://hexdocs.pm/learntlist](https://hexdocs.pm/learntlist).
 
 
 ## Running the tests
@@ -67,7 +65,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
 
 
 ## Acknowledgements

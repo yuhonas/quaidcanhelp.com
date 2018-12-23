@@ -1,4 +1,4 @@
-defmodule Quaidcanhelp.DataCase do
+defmodule Learntlist.DataCase do
   @moduledoc """
   This module defines the setup for tests requiring
   access to the application's data layer.
@@ -16,20 +16,20 @@ defmodule Quaidcanhelp.DataCase do
 
   using do
     quote do
-      alias Quaidcanhelp.Repo
+      alias Learntlist.Repo
 
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
-      import Quaidcanhelp.DataCase
+      import Learntlist.DataCase
     end
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Quaidcanhelp.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Learntlist.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(Quaidcanhelp.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(Learntlist.Repo, {:shared, self()})
     end
 
     :ok

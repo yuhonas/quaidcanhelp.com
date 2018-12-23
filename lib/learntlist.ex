@@ -1,6 +1,6 @@
-defmodule Quaidcanhelp do
+defmodule Learntlist do
   @moduledoc """
-  Quaidcanhelp keeps the contexts that define your domain
+  Learntlist keeps the contexts that define your domain
   and business logic.
 
   Contexts are also responsible for managing your data, regardless

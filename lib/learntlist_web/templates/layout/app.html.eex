@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Quaidcanhelp</title>
+  <title>Learntlist</title>
   <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/bundle/app.css") %>"/>
 </head>
 <body>
@@ -12,7 +12,7 @@
     <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" href="https://bulma.io">
-          <strong>quaidcanhelp</strong>
+          <strong>learntlist</strong>
         </a>
 
         <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">

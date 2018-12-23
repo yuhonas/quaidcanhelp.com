@@ -1,4 +1,4 @@
-defmodule QuaidcanhelpWeb.ChannelCase do
+defmodule LearntlistWeb.ChannelCase do
   @moduledoc """
   This module defines the test case to be used by
   channel tests.
@@ -21,15 +21,15 @@ defmodule QuaidcanhelpWeb.ChannelCase do
       use Phoenix.ChannelTest
 
       # The default endpoint for testing
-      @endpoint QuaidcanhelpWeb.Endpoint
+      @endpoint LearntlistWeb.Endpoint
     end
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Quaidcanhelp.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Learntlist.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(Quaidcanhelp.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(Learntlist.Repo, {:shared, self()})
     end
 
     :ok
