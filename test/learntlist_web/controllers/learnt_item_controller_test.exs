@@ -12,13 +12,6 @@ defmodule LearntlistWeb.LearntItemControllerTest do
     learnt_item
   end
 
-  describe "index" do
-    test "lists all learnt_items", %{conn: conn} do
-      conn = get(conn, Routes.learnt_item_path(conn, :index))
-      assert html_response(conn, 200) =~ "Listing Learnt items"
-    end
-  end
-
   describe "new learnt_item" do
     test "renders form", %{conn: conn} do
       conn = get(conn, Routes.learnt_item_path(conn, :new))
@@ -74,7 +67,7 @@ defmodule LearntlistWeb.LearntItemControllerTest do
 
     test "deletes chosen learnt_item", %{conn: conn, learnt_item: learnt_item} do
       conn = delete(conn, Routes.learnt_item_path(conn, :delete, learnt_item))
-      assert redirected_to(conn) == Routes.learnt_item_path(conn, :index)
+      assert redirected_to(conn) == Routes.page_path(conn, :index)
       assert_error_sent 404, fn ->
         get(conn, Routes.learnt_item_path(conn, :show, learnt_item))
       end

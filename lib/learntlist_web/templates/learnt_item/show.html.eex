@@ -20,4 +20,4 @@
 </ul>
 
 <span><%= link "Edit", to: Routes.learnt_item_path(@conn, :edit, @learnt_item) %></span>
-<span><%= link "Back", to: Routes.learnt_item_path(@conn, :index) %></span>
+<span><%= link "Back", to: Routes.page_path(@conn, :index) %></span>

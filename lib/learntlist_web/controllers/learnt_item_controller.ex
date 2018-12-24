@@ -4,11 +4,6 @@ defmodule LearntlistWeb.LearntItemController do
   alias Learntlist.LearntItems
   alias Learntlist.LearntItems.LearntItem
 
-  def index(conn, _params) do
-    learnt_items = LearntItems.list_learnt_items()
-    render(conn, "index.html", learnt_items: learnt_items)
-  end
-
   def new(conn, _params) do
     changeset = LearntItems.change_learnt_item(%LearntItem{})
     render(conn, "new.html", changeset: changeset)
@@ -57,6 +52,6 @@ defmodule LearntlistWeb.LearntItemController do
 
     conn
     |> put_flash(:info, "Learnt item deleted successfully.")
-    |> redirect(to: Routes.learnt_item_path(conn, :index))
+    |> redirect(to: Routes.page_path(conn, :index))
   end
 end
