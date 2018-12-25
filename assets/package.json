@@ -7,6 +7,9 @@
     "deploy": "parcel build js/app.js --out-dir ../priv/static/bundle",
     "watch": "parcel watch js/app.js --out-dir ../priv/static/bundle"
   },
+  "engines": {
+    "node": "~11.4.0"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
