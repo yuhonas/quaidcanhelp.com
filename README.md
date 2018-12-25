@@ -1,6 +1,4 @@
-# learntlist.com
-
-[![Build Status](https://travis-ci.com/yuhonas/learntlist.com.svg?branch=master)](https://travis-ci.com/yuhonas/learntlist.com)
+# learntlist.com [![Build Status](https://travis-ci.com/yuhonas/learntlist.com.svg?branch=master)](https://travis-ci.com/yuhonas/learntlist.com)
 
 A dispassionate list of day to day learnings
 
