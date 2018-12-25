@@ -1,3 +1,7 @@
+<div class="buttons">
+    <%= link "Prev Page", to: Routes.page_path(@conn, :index, page: @page.page_number - 1), class: "button" %>
+    <%= link "Next Page", to: Routes.page_path(@conn, :index, page: @page.page_number + 1), class: "button" %>
+</div>
 <div class="columns features is-multiline">
     <%= for learnt_item <- @learnt_items do %>
         <div class="column is-4">
@@ -26,3 +30,4 @@
         </div>
     <% end %>
 </div>
+
