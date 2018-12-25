@@ -3,9 +3,9 @@ defmodule LearntlistWeb.LearntItemControllerTest do
 
   alias Learntlist.LearntItems
 
-  @create_attrs %{body: "some body", title: "some title", url: "some url"}
-  @update_attrs %{body: "some updated body", title: "some updated title", url: "some updated url"}
-  @invalid_attrs %{body: nil, title: nil, url: nil}
+  @create_attrs %{abstract: "some abstract", title: "some title", url: "some url"}
+  @update_attrs %{abstract: "some updated abstract", title: "some updated title", url: "some updated url"}
+  @invalid_attrs %{abstract: nil, title: nil, url: nil}
 
   def fixture(:learnt_item) do
     {:ok, learnt_item} = LearntItems.create_learnt_item(@create_attrs)
@@ -53,7 +53,7 @@ defmodule LearntlistWeb.LearntItemControllerTest do
       assert redirected_to(conn) == Routes.learnt_item_path(conn, :show, learnt_item)
 
       conn = get(conn, Routes.learnt_item_path(conn, :show, learnt_item))
-      assert html_response(conn, 200) =~ "some updated body"
+      assert html_response(conn, 200) =~ "some updated abstract"
     end
 
     test "renders errors when data is invalid", %{conn: conn, learnt_item: learnt_item} do

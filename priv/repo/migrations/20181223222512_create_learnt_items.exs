@@ -4,7 +4,7 @@ defmodule Learntlist.Repo.Migrations.CreateLearntItems do
   def change do
     create table(:learnt_items) do
       add :title, :string
-      add :body, :text
+      add :abstract, :text
       add :url, :string
 
       timestamps()

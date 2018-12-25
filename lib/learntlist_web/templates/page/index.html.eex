@@ -16,7 +16,7 @@
                     </div>
 
                     <div class="content">
-                        <%= learnt_item.body %>
+                        <%= learnt_item.abstract %>
                         <a href="#">#css</a> <a href="#">#responsive</a>
                         <br>
                         <time datetime="2016-1-1"><%= learnt_item.inserted_at %></time>

@@ -8,8 +8,8 @@
   </li>
 
   <li>
-    <strong>Body:</strong>
-    <%= @learnt_item.body %>
+    <strong>Abstract:</strong>
+    <%= @learnt_item.abstract %>
   </li>
 
   <li>

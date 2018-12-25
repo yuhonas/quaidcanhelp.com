@@ -14,12 +14,12 @@
   <%= error_tag f, :title %>
 
   <div class="field">
-      <%= label f, :body , class: "label" %>
+      <%= label f, :abstract , class: "label" %>
   </div>
   <div class="control">
-  <%= textarea f, :body, class: "textarea" %>
+  <%= textarea f, :abstract, class: "textarea" %>
   </div>
-  <%= error_tag f, :body %>
+  <%= error_tag f, :abstract %>
 
   <div class="field">
       <%= label f, :url , class: "label" %>

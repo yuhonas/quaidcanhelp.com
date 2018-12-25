@@ -6,9 +6,9 @@ defmodule Learntlist.LearntItemsTest do
   describe "learnt_items" do
     alias Learntlist.LearntItems.LearntItem
 
-    @valid_attrs %{body: "some body", title: "some title", url: "some url"}
-    @update_attrs %{body: "some updated body", title: "some updated title", url: "some updated url"}
-    @invalid_attrs %{body: nil, title: nil, url: nil}
+    @valid_attrs %{abstract: "some abstract", title: "some title", url: "some url"}
+    @update_attrs %{abstract: "some updated abstract", title: "some updated title", url: "some updated url"}
+    @invalid_attrs %{abstract: nil, title: nil, url: nil}
 
     def learnt_item_fixture(attrs \\ %{}) do
       {:ok, learnt_item} =
@@ -31,7 +31,7 @@ defmodule Learntlist.LearntItemsTest do
 
     test "create_learnt_item/1 with valid data creates a learnt_item" do
       assert {:ok, %LearntItem{} = learnt_item} = LearntItems.create_learnt_item(@valid_attrs)
-      assert learnt_item.body == "some body"
+      assert learnt_item.abstract == "some abstract"
       assert learnt_item.title == "some title"
       assert learnt_item.url == "some url"
     end
@@ -43,7 +43,7 @@ defmodule Learntlist.LearntItemsTest do
     test "update_learnt_item/2 with valid data updates the learnt_item" do
       learnt_item = learnt_item_fixture()
       assert {:ok, %LearntItem{} = learnt_item} = LearntItems.update_learnt_item(learnt_item, @update_attrs)
-      assert learnt_item.body == "some updated body"
+      assert learnt_item.abstract == "some updated abstract"
       assert learnt_item.title == "some updated title"
       assert learnt_item.url == "some updated url"
     end
