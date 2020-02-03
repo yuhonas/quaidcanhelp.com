@@ -60,7 +60,7 @@ defmodule Learntlist.LearntItems do
 
   ## Examples
 
-      iex> update_learnt_item(learnt_item, %{field: new_value})
+  iex> update_learnt_item(learnt_item, %{field: new_value})
       {:ok, %LearntItem{}}
 
       iex> update_learnt_item(learnt_item, %{field: bad_value})

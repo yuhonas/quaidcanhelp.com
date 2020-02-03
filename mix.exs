@@ -45,7 +45,9 @@ defmodule Learntlist.MixProject do
       {:plug_cowboy, "~> 2.0"},
       {:credo, "~> 1.0.0", only: [:dev, :test], runtime: false},
       {:dialyxir, "~> 0.5", only: [:dev], runtime: false},
-      {:scrivener_ecto, "~> 2.0"}
+      {:scrivener_ecto, "~> 2.0"},
+      {:httpoison, "~> 1.4"},
+      {:poison, "~> 3.1"}
     ]
   end
 
