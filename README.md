@@ -26,7 +26,7 @@ First of all let's get the data out of evernote into something more usable, I du
 1) Exporting notes I added using the webclipper 
 
 ```bash
-xq --raw-output '.[] | .note | [.[] | select(.["note-attributes"]["source-url"]| tostring | contains("wikipedia"))] | unique_by(.["note-attributes"]["source-url"]) | .[] |  [ .created, .updated, .title, .["note-attributes"]["source-url"] ] | @csv' ~/Downloads/learnt-list.enex | psql learntlist_dev -c "COPY learnt_items (inserted_at,updated_at,title,url) from STDIN DELIMITER ',' NULL '' CSV"
+xq --raw-output '.[] | .note | [.[] | select(.["note-attributes"]["source-url"]| tostring | contains("wikipedia"))] | unique_by(.["note-attributes"]["source-url"]) | .[] |  [ .created, .updated, .title, .["note-attributes"]["source-url"] ] | @csv' learnt-list.enex | psql learntlist_dev -c "COPY learnt_items (inserted_at,updated_at,title,url) from STDIN DELIMITER ',' NULL '' CSV"
 ```
 
 2) Exporting notes I added by hand that _somewhere_ in the body contained a wikipedia link
